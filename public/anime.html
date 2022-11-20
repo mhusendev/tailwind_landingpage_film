@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<section>
+  <div class="bg-gradient-to-br text-white from-slate-800 to-slate-700 px-4 py-4 lg:py-5">
+   <div class="flex flex-col lg:flex-row">
+    <div class="item-center flex justify-between ">
+        <div>
+            <a href="/public/index.html" class="text-red-500 outline-white uppercase font-extrabold">mh-movie</a>
+         </div>
+         <div >
+           <button class="focus:outline-none text-white block lg:hidden" onclick="menu()">
+             <svg  class="w-5 h-5" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                 <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 5.25h16.5m-16.5 4.5h16.5m-16.5 4.5h16.5m-16.5 4.5h16.5" />
+               </svg>
+           </button>
+               
+         </div>
+    </div>
+
+       <div class="lg:mx-4 lg:flex flex-col lg:flex-row border-t  transition-all transition-duration:200ms  lg:border-t-0 mt-1 lg:mt-0 hidden" id="menubar">
+        <a href="a" class="block lg:px-4 mt-3 lg:mt-0  hover:text-cyan-500">Indonesian movie</a>
+        <a href="anime.html" class="block lg:px-4 mt-3 lg:mt-0 hover:text-cyan-500 text-cyan-500">Anime</a>
+        <a href="a" class="block lg:px-4 mt-3 lg:mt-0 hover:text-cyan-500">Recomended</a>
+       </div>
+   </div>
+  </div>
+</section>
+
+<section class=" bg-slate-700">
+
+</section>
+
+</body>
+</html>
+<script>
+    var state = false 
+
+    function menu() {
+        console.log(state)
+     if(state ==  false) {
+        document.getElementById('menubar').style.display = 'block'
+        state = true
+     } else {
+        document.getElementById('menubar').style.display = 'none'
+        state = false
+     }
+    }
+</script>
